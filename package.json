@@ -1,0 +1,59 @@
+{
+  "name": "bowling-game-kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "tslint --project . --config ./tslint.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smilejp/BowlingGameKata.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smilejp/BowlingGameKata/issues"
+  },
+  "homepage": "https://github.com/smilejp/BowlingGameKata#readme",
+  "jest": {
+    "preset": "ts-jest",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/src/components/**/*.{ts,tsx}",
+      "**/src/utils/**/*.{ts,tsx}",
+      "!**/index.ts",
+      "!**/node_modules/**",
+      "!**/lib/**",
+      "!**/examples/**",
+      "!**/vendor/**"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testMatch": [
+      "**/test/*test.(ts|tsx|js)"
+    ],
+    "globals": {
+      "ts-jest": {
+        "diagnostics": true
+      }
+    }
+  },
+  "dependencies": {
+    "typescript": "^3.4.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.7.1",
+    "prettier": "^1.17.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.15.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0"
+  }
+}
