@@ -1,10 +1,6 @@
 export default class Game {
-  private _rolls: number[] = [];
+  private _rolls: number[] = Array(21).fill(0);
   private _currentRoll: number = 0;
-
-  constructor() {
-    this._rolls = Array(21).fill(0);
-  }
 
   public roll(pins: number = 0) {
     this._rolls[this._currentRoll++] = pins;
